@@ -1,88 +1,182 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/e64389b91a.js"></script>
-    <link rel="stylesheet" href="styles.css">
- 
-  </head>
-  <body>
-    <section id="landing-page">
-      <header>
-        <div class="container">
-          <nav id="top-nav">
-            <ul>
-              <li class="push"><a href="juhichaudhari.githum.io" class="logo">J</a></li>
-              <li><a href="#about-me">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-  
-      <div class="container" id="cover">
-        <div id="fo">
-          <p>Hello World!;</p>
-          <p>I'm Juhi!;</p>
-        </div>
-      </div>
-  </section>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/e64389b91a.js"></script>
+        <link rel="stylesheet" href="styles1.css">
+    </head>
+    <body>
+        <section id="top">
+            <header>
+                <div class="container">
+                    <nav id="top-nav">
+                        <ul>
+                            <li class="push"><a href="#" class="logo">J</a></li>
+                            <li><a href="#about-me">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </section>
+            
+        <section id="landing-page">
+            <div class="container-landing">
+                <div class="screen"></div>
+                <div class="key">
+                    <div class="button"></div>
+                </div>
+                <div class="stand"></div>
+                <div class="bottom-stand"></div>
+            </div>
+        </section>
+          
+        <section class="container-about">
+            <div id="about-me">
+                <h3>About me</h3>
+                <h4 class="typewriter">Hello world! I am Juhi!;</h4>
+                <p id="center">I am currently working toward Bachelor's degree focused in Computer Science from New Jersey Institute of Technology. 
+                My skills include in Microsoft Office, python, Java, HTML5/CSS3, C++, Unix/Linux. I am actively looking for a Summer Internship 2021 in the field of Computer Science where I can utilize my skills and get the real job working experience by learning and doing. </p>
+                <br>
+            </div>
 
-  <section id="about-me" class="container-about">
-    <div class="skills">
-      <h3>About me</h3>
-      <p id="center">I'm a computer science major studying at New Jersey Institution of Technology. I have a passion for web design and love to create for web and mobile devices. My ultimate goal is to become software engineer. </p>
-      <br>
-      <div class="">
-        <p>Technical Skills:</p>
-        <ul>
-           <li>microsoft office</li>
-           <li>excel</li>
-           <li>java</li>
-           <li>html</li>
-           <li>css</li>
-           <li>javascript</li>
-        </ul>
+            <!--
+            Checkbox Trickery with CSS:
+            http://codersblock.com/blog/checkbox-trickery-with-css/ 
+            -->
+            <div class="todo">
+                <h1>Skills</h1>
+                <div class="container-todo">
+                    <div class="items">
+                    <input id="item1" type="checkbox" checked>
+                    <label for="item1">Python</label>
+                    
+                    <input id="item2" type="checkbox" checked>
+                    <label for="item2">Java</label>
+                    
+                    <input id="item3" type="checkbox" checked>
+                    <label for="item3">C/C++</label>
+                    
+                    <input id="item4" type="checkbox" checked>
+                    <label for="item4">Bash Scripting</label>
+                    
+                    <input id="item5" type="checkbox">
+                    <label for="item5">JavaScript</label>
+                    
+                    <input id="item6" type="checkbox">
+                    <label for="item6">SQL</label>
+                    
+                    <input id="item7" type="checkbox">
+                    <label for="item7">PHP</label>
         
-        <br>
-        
-        <p>Other Skills: </p>
-        <ul>
-          <li>quick learner</li>
-          <li>problem solving</li>
-          <li>team work</li>
-        </ul>
-        
-        <br>
-        
-        <p>Currently Learning:</p>
-        <ul>
-          <li>SQL</li>
-        </ul>
-      </div>
-  </section>
-    
-  <section id="contact">
-    <div class="container-about">
-      <h3 class="">Get In Touch With Me</h3>
-      <div id="message-section">
-        <button id="email-button"><a href="mailto:jc2944@njit.edu" target="_top">Message Me</a></button>
-      </div> 
-    </div>
-  </section>
-  
-  <footer>
-    <div id="bottom-nav">
-      <ul>
-        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://www.njit.edu/" target="_blank"><i class="fas fa-university"></i></a></li>
-        <li><a href="https://github.com/juhichaudhari"><i class="fab fa-github"></i></a></li>
-     </ul>
-     <p>&copy; Copyright 2019 | All Rights Reserved | Juhi Chaudhari</p>  
-    </div>
-  </footer>
-    
- </body>
+                    <input id="item8" type="checkbox" checked>
+                    <label for="item8">HTML/CSS</label>
+                    
+                    <h2 class="done" aria-hidden="true"></h2>
+                    <h2 class="undone" aria-hidden="true">In Progress</h2>
+                </div>
+            </div>
+        </section>
+              
+        <section id="projects">
+            <h2>Selected Projects</h2>
+          
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('python')"> Python</button>
+                <button class="btn" onclick="filterSelection('cpp')"> C++</button>
+                <button class="btn" onclick="filterSelection('java')"> Java</button>
+            </div>
+          
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column python">
+                    <div class="content skills">
+                        <h4>DNS Programming</h4>
+                        <p> Using UDP sockets, designed a simplified version of a DNS client and server. 
+                            The client sends a request to the server to look up the IP address of a 
+                            specified host in that domain. The server responds with the type A resource 
+                            record associated with the host. The client and server communicate using 
+                            the message format specified.</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>UDP Sockets</li>
+                            <li>Computer Networks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column python">
+                    <div class="content skills">
+                        <h4>UDP Ping client and server</h4>
+                        <p>Using UDP sockets, created a client and server program that enables the client 
+                            to determine the round-trip time (RTT) to the server. To determine the RTT delay, 
+                            the client records the time on sending a ping request to the server, and then 
+                            records the time on receiving a ping response from the server.</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>UDP sockets</li>
+                            <li>Computer Networks</li>
+                            <li>Round trip time</li>
+                            <li>Ping messages</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="column cpp">
+                    <div class="content skills">
+                        <h4>Lexical and Syntax Analyzer</h4>
+                        <p> A program that interpret a small language with constants, a small number of 
+                            keywords, and some operators and specific grammar rules.Created a Lexical 
+                            Analyzer that would recognize tokens.Constructed an interpreter that would 
+                            evaluate each statement and expression to execute them.</p>
+                        <ul>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column java">
+                    <div class="content skills">
+                        <h4>Savings Account</h4>
+                        <p>Created a SavingsAccount object with a balance, interest rate, and a monthly 
+                            service charge. The program is able to make deposits, withdraws, and process 
+                            monthly service fees as user like.</p>
+                        <ul>
+                            <li>Java</li>
+                            <li>Objected Oriented Programming</li>
+                            <li>inheritance</li>
+                            <li>abstract classes</li>
+                            <li>interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- END GRID -->
+            </div>
+                
+        </section>
+              
+        <section>
+            <div class="container-message" id="contact">
+                <h3 class="">Get In Touch With Me</h3>
+                <div id="message-section">
+                    <button id="email-button"><a href="mailto:jc2944@njit.edu?Subject=Hello%20again" target="_top">Message Me</a></button>
+                </div> 
+            </div>
+        </section>
+            
+        <footer>
+            <div id="bottom-links">
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.njit.edu/" target="_blank"><i class="fas fa-university"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <p>&copy; Copyright 2020 Juhi Chaudhari</p>  
+            </div>
+        </footer>        
+        <script src="main1.js"></script>
+    </body>
 </html>
+
 
