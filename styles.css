@@ -3,40 +3,47 @@
 *{
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-family: 'Source Code Pro', monospace;
+  list-style: none;
+  box-sizing: border-box;
+  overflow: none;
+
 }
 
 .logo{
   width: 50px;
   height: 50px;
 	border-radius: 200px 200px 200px 200px; 
-  background-color: pink;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: 'Pacifico', cursive;
-  color: #f7eaff;
-  background-color: #BF80E4;
+  color: #E0F2F1;
+  background-color: #4DB6AC;
+}
+
+#top{
+  background-color: #E0F2F1;
+  color: #009688;
+  height: 150px;
 }
 
 #landing-page{
-  background-color: #f7eaff;
-  color: #A159CB;
-  height: 100vh;
+  background-color: #E0F2F1;
+  color: #009688;
+  height: 400px;
 }
 
 .container{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 1.5em;
 }
 
 #top-nav ul{
-  list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left: 5px;
 }
 
 .push{
@@ -51,52 +58,91 @@ li{
 
 a{
   text-decoration: none;
-  color: #A159CB;
+  color: #009688;
 }
 
-/* cover */
-#cover{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-  font-family: 'Source Code Pro', monospace;
-  text-align: center;
+/* COMPUTER IMG*/
+.container-landing{
+  width: 380px;
+  margin: 0 auto;
 }
 
-#cover p {
-  font-size: 1.5em;
+.screen{
+  margin: 0 auto;
+  width: 300px;
+  height: 150px;
+  background-color: #607D8B;
+  border-radius: 25px 25px 0 0;
+}
+
+.key{
+  margin: 0 auto;
+  width: 300px;
+  height:60px;
+  background-color: #E0E0E0;
+  border-radius: 0px 0px 20px 20px;
+  padding-top: 5px;
+}
+
+.button{
+  background-color: #B0BEC5;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.stand{
+  margin: 0 auto;
+  background-color: #B0BEC5;
+  width: 50px;
+  height: 50px;
+}
+
+.bottom-stand{
+  margin: 0 auto;
+  background-color: #B0BEC5;
+  width: 150px;
+  height: 10px;
 }
 
 /* About me*/
-h3{
-  color: #A159CB;
+h3, h4{
+  color: #4DB6AC;
   font-family: 'Source Code Pro', monospace;
   text-align: center;
   margin-bottom: 15px;
-  font-size: 1.4em;
+}
 
+h2{
+  color: #4DB6AC;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #center{
     text-align: center;
 }
 
-
 /* Skills */
-.container-about{
-  margin: 0 auto;
-  width: 80%;
+#about-me{
+  width: 450px;
 }
 
-#about-me{
+.container-about{
   padding: 2em;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 2px;
+  overflow: none;
 }
 
 .skills ul
@@ -111,12 +157,225 @@ h3{
 .skills ul li
 {
   padding: 0.2em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
   margin: 0.2em;
-  font-size: 0.8em;
-  border: 2px solid #A159CB;
+  font-size: 0.7em;
+  border: 2px solid #4DB6AC;
   border-radius: 10px;
 }
 
+/* Projects */
+#projects {
+  max-width: 1000px;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.column {
+  width: 30em;
+  display: none; /* Hide all elements by default */
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 1.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: flex;
+}
+
+#myBtnContainer{
+  margin-left: 2em;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 0.7em;
+
+}
+
+.btn:hover {
+  background-color: #E0F2F1;
+}
+
+.btn.active {
+  background-color: #4DB6AC;
+  color: white;
+}
+
+/* CONTACT ME */
+#contact {
+  margin: 0 auto;
+  padding: 1.5em;
+}
+#message-section{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#email-button{
+  font-size: 20px;
+  padding: 0.5em;
+  background-color: #E0F2F1;
+  border: none; 
+  border-radius: 10px;
+}
+
+#email-button:hover{
+  font-size: 25px;
+
+}
+
+/* FOOTER*/
+footer{
+  color: #315652;
+  background-color: #E0F2F1;
+  padding: 1em;
+}
+
+#bottom-links ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  text-align: center;
+}
+
+/* TYPEWRITTER */
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #4DB6AC; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #4DB6AC }
+}
+
+/* MEDIA QUARIED*/
+
+  /* For tablets: */
+@media only screen and (min-width: 650px) {
+  .container{
+    width: 80%;
+  }
+  #top-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* EDUCATION */
+  #education{
+    padding: 3em;
+  }
+
+  .column {
+    width: 20em;
+  }
+
+}
+
+  /* For desktop: */
+@media screen and (min-width: 768px) {
+  #top-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* EDUCATION */
+  #education{
+    padding: 3em;
+  }
+
+  .container-education{
+    width: 70%;
+  }
+      
+  .courses{
+    width: 55%;
+  }
+}
+
+
+
+  .container-about{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-cover{
+  width: 380px;
+  margin: 0 auto;
+  }
+
+.screen{
+  width: 380px;
+  height: 200px;
+  }
+
+.key{
+  width: 380px;
+  }
+
+.container-skil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todolist
+{
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.5em;
+
+
+}
 .center
 {
   display: flex;
@@ -124,68 +383,182 @@ h3{
   justify-content: center;
 }
 
-/* CONTACT ME */
-#contact{
-  margin: 0 auto;
-  padding: 2em;
-  text-align: center;
-}
-
-#email-button{
-  font-size: 20px;
-  padding: 0.5em 2em;
-  background-color: #F0DBFD;
-  border: none; 
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 10px 5px #BF80E4;
-  transition-delay: all 0.3s ease-in-out;
-}
-
-#email-button:hover{
-  box-shadow: none;
-}
-
-/* FOOTER*/
-footer{
-  background-color: #f7eaff;
+.todo-input{
+  border: none;
+  border-bottom: 2px solid#4DB6AC;
   padding: 1em;
 }
 
-#bottom-nav ul{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.todo-button{
+  background-color: #4DB6AC;
+  margin: 1.5em; 
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
 }
 
-.fab, .fas{
-  font-size: 20px;
+.to-list{
+  width: 60%;
+  margin: 0 auto;
 }
 
-footer p{
+.to-list ul li{
+  padding: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+
+.todo {
+  width: 450px;
+  margin: 0 auto;
+  margin: 20px;
+  color: #435757;
+  background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+  font: 500 1em/1.2 'Roboto', sans-serif;
+}
+
+.container-todo {
+  margin: 0 auto;
+  border-top: 5px solid #435757;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  user-select: none;
+}
+
+.todo h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 0.8em;
   text-align: center;
-  font-size: 15px;
 }
 
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  counter-reset: done-items undone-items;
+}
 
-/* MEDIA QUARIED*/
+.container-todo h2 {
+  position: relative;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 0.9em;
+}
 
-  /* For tablets: */
-@media only screen and (min-width: 650px) {
-  .container-about{
-    margin: 0 auto;
-    width: 60%;
+.container-todo h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+  background-color: #435757;
+}
+
+.container-todo h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.done {
+  order: 1;
+}
+
+.done::after {
+  content: ' (' counter(done-items) ')';
+}
+
+.undone {
+  order: 3;
+}
+
+.undone::after {
+  content: ' (' counter(undone-items) ')';
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+input {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+
+input:checked {
+  order: 2;
+  counter-increment: done-items;  
+}
+
+label {
+  display: block;
+  position: relative;
+  padding: 15px 0 15px 45px;
+  border-top: 1px dashed #fff;
+  order: 4;
+  cursor: pointer;
+  animation: undone .5s;
+}
+
+label::before {
+  content: '\f10c'; /* circle outline */
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font: 1.5em 'FontAwesome';
+}
+
+label:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input:checked + label {
+  order: 2;
+  animation: done .5s;
+}
+
+input:checked + label::before {
+  content: '\f058'; /* circle checkmark */
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
   }
 }
 
-  /* For desktop: */
-@media screen and (min-width: 768px) {
-  .container-about{
-    margin: 0 auto;
-    width: 35%;
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
 }
-}
- 
 
 
 
