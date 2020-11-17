@@ -73,6 +73,8 @@ a{
   height: 150px;
   background-color: #607D8B;
   border-radius: 25px 25px 0 0;
+  color: #fff;
+  padding: 1em;
 }
 
 .key{
@@ -93,6 +95,15 @@ a{
   height: 35px;
   border-radius: 50%;
 }
+
+.tab {
+  margin-left: 2.5em
+ }
+
+ .tab2 {
+  margin-left: 4.5em
+ }
+
 
 .stand{
   margin: 0 auto;
