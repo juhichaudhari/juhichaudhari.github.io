@@ -77,6 +77,14 @@ a{
   padding: 1em;
 }
 
+.tab {
+  margin-left: 2.5em
+ }
+
+ .tab2 {
+  margin-left: 4.5em
+ }
+
 .key{
   margin: 0 auto;
   width: 300px;
@@ -95,14 +103,6 @@ a{
   height: 35px;
   border-radius: 50%;
 }
-
-.tab {
-  margin-left: 2.5em
- }
-
- .tab2 {
-  margin-left: 4.5em
- }
 
 
 .stand{
