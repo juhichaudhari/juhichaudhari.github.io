@@ -120,35 +120,25 @@ a{
 }
 
 /* About me*/
-h3, h4{
+h2, h3, h4{
   color: #4DB6AC;
   font-family: 'Source Code Pro', monospace;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-h2{
-  color: #4DB6AC;
-  font-family: 'Source Code Pro', monospace;
-  text-align: center;
-  margin-bottom: 15px;
-}
+
 
 #center{
     text-align: center;
 }
 
 /* Skills */
-#about-me{
-  width: 450px;
-}
-
 .container-about{
   padding: 2em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
   font-size: 20px;
   line-height: 30px;
@@ -156,24 +146,94 @@ h2{
   overflow: none;
 }
 
-.skills ul
-{
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+#about-me{
+  width: 30%;
 }
 
-.skills ul li
-{
-  padding: 0.2em;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
-  margin: 0.2em;
-  font-size: 0.7em;
-  border: 2px solid #4DB6AC;
-  border-radius: 10px;
+.container-skills{
+  width: 40%;
+}
+
+p.container-skills {
+  font-size: 10px;
+}
+
+.skills-outer{ 
+  background-color: #ddd;
+  margin-bottom: 0.5rem;
+  height: 10px;
+}
+
+h4.skills-container{
+  margin-bottom: 5px;
+}
+
+.skills-bar {
+  text-align: left;
+  padding-right: 30px;
+  line-height: 30px;
+  color: white;
+  background-color: #4DB6AC;
+  height: 10px;
+}
+
+.skill-python {
+  width: 85%;
+}
+
+.skill-java {
+  width: 70%;
+}
+
+.skill-js {
+  width: 70%;
+}
+
+.skill-react {
+  width: 60%;
+}
+
+.skill-html {
+  width: 85%;
+}
+
+.skill-css {
+  width: 70%;
+}
+
+.skill-mysql {
+  width: 70%;
+}
+
+.skill-c {
+  width: 60%;
+}
+
+.skill-git {
+  width: 80%;
+}
+
+
+@-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: #ddd;}
+  to {background-color: #B388FF;}
+}
+
+#div1{
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  box-shadow: inset 0 0 0 0 #B388FF;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
 }
 
 /* Projects */
@@ -240,6 +300,28 @@ h1 {
 .btn.active {
   background-color: #4DB6AC;
   color: white;
+}
+
+/* Skills */
+
+.skills ul
+{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills ul li
+{
+  padding: 0.2em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  margin: 0.2em;
+  font-size: 0.7em;
+  border: 2px solid #4DB6AC;
+  border-radius: 10px;
 }
 
 /* CONTACT ME */
@@ -340,19 +422,6 @@ footer p{
   }
 
   /* EDUCATION */
-  #education{
-    padding: 3em;
-  }
-
-  .container-education{
-    width: 70%;
-  }
-      
-  .courses{
-    width: 55%;
-  }
-}
-
 
 
   .container-about{
@@ -374,203 +443,4 @@ footer p{
   width: 380px;
   }
 
-.container-skil{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.todolist
-{
-  width: 70%;
-  margin: 0 auto;
-  padding: 1.5em;
-
-
-}
-.center
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.todo-input{
-  border: none;
-  border-bottom: 2px solid#4DB6AC;
-  padding: 1em;
-}
-
-.todo-button{
-  background-color: #4DB6AC;
-  margin: 1.5em; 
-  padding: 1em;
-  border: none;
-  border-radius: 5px;
-}
-
-.to-list{
-  width: 60%;
-  margin: 0 auto;
-}
-
-.to-list ul li{
-  padding: 0.5em;
-}
-
-
-
-
-
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
-
-
-.todo {
-  width: 450px;
-  margin: 0 auto;
-  margin: 20px;
-  color: #435757;
-  background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
-  font: 500 1em/1.2 'Roboto', sans-serif;
-}
-
-.container-todo {
-  margin: 0 auto;
-  border-top: 5px solid #435757;
-  background-color: rgba(255, 255, 255, .2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  user-select: none;
-}
-
-.todo h1 {
-  margin: 0;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, .4);
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.items {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  counter-reset: done-items undone-items;
-}
-
-.container-todo h2 {
-  position: relative;
-  margin: 0;
-  padding: 10px 0;
-  font-size: 0.9em;
-}
-
-.container-todo h2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: -20px;
-  width: 5px;
-  background-color: #435757;
-}
-
-.container-todo h2::after {
-  display: block;
-  float: right;
-  font-weight: normal;
-}
-
-.done {
-  order: 1;
-}
-
-.done::after {
-  content: ' (' counter(done-items) ')';
-}
-
-.undone {
-  order: 3;
-}
-
-.undone::after {
-  content: ' (' counter(undone-items) ')';
-}
-
-/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
-input {
-  display: block;
-  height: 53px;
-  margin: 0 0 -53px -9999px;
-  order: 4;
-  outline: none;
-  counter-increment: undone-items;
-}
-
-input:checked {
-  order: 2;
-  counter-increment: done-items;  
-}
-
-label {
-  display: block;
-  position: relative;
-  padding: 15px 0 15px 45px;
-  border-top: 1px dashed #fff;
-  order: 4;
-  cursor: pointer;
-  animation: undone .5s;
-}
-
-label::before {
-  content: '\f10c'; /* circle outline */
-  display: block;
-  position: absolute;
-  top: 11px;
-  left: 10px;
-  font: 1.5em 'FontAwesome';
-}
-
-label:hover, input:focus + label {
-  background-color: rgba(255, 255, 255, .2);
-}
-
-input:checked + label {
-  order: 2;
-  animation: done .5s;
-}
-
-input:checked + label::before {
-  content: '\f058'; /* circle checkmark */
-}
-
-@keyframes done {
-  0% {
-    opacity: 0;
-    background-color: rgba(255, 255, 255, .4);
-    transform: translateY(20px);
-  }
-  50% {
-    opacity: 1;
-    background-color: rgba(255, 255, 255, .4);
-  }
-}
-
-@keyframes undone {
-  0% {
-    opacity: 0;
-    background-color: rgba(255, 255, 255, .4);
-    transform: translateY(-20px);
-  }
-  50% {
-    opacity: 1;
-    background-color: rgba(255, 255, 255, .4);
-  }
-}
-
-
-
-
