@@ -304,7 +304,7 @@ h1 {
 
 /* Skills */
 
-.skills ul
+.tags
 {
   list-style: none;
   display: flex;
@@ -313,7 +313,7 @@ h1 {
   align-items: center;
 }
 
-.skills ul li
+.tags li
 {
   padding: 0.2em;
   padding-left: 0.7em;
