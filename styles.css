@@ -6,7 +6,10 @@
   list-style: none;
   box-sizing: border-box;
   overflow: none;
+}
 
+p{
+  margin-bottom: 5px;;
 }
 
 .logo{
@@ -24,7 +27,7 @@
 #top{
   background-color: #E0F2F1;
   color: #009688;
-  height: 150px;
+  height: 180px;
 }
 
 #landing-page{
@@ -78,11 +81,11 @@ a{
 }
 
 .tab {
-  margin-left: 2.5em
+  margin-left: 2em
  }
 
  .tab2 {
-  margin-left: 4.5em
+  margin-left: 4em
  }
 
 .key{
@@ -127,92 +130,67 @@ h2, h3, h4{
   margin-bottom: 30px;
 }
 
-
-
 #center{
     text-align: center;
 }
 
 /* Skills */
 .container-about{
-  padding: 2em;
+  padding: 5em 2em;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  font-size: 20px;
+  justify-content: center;
+  font-size: 17px;
   line-height: 30px;
   letter-spacing: 2px;
   overflow: none;
 }
 
 #about-me{
+  width: 40%;
+  margin-left: 3em;
+}
+
+#about-me h2{
+  text-align: left;
+  border-bottom: 1px solid #000;
+  width:100%;
+  margin-bottom: 1em;
+}
+
+#about-me a:hover{
+  color: #315652;
+
+}
+
+.me {
   width: 30%;
 }
 
-.container-skills{
-  width: 40%;
+/* Style the button*/
+.container-about .btn {
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  background-color: #009688;
+  color: #f8f8f8;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 3em;
+  border: 2px solid transparent;
 }
 
-p.container-skills {
-  font-size: 10px;
+.container-about .btn:hover {
+  background-color: #f9fafa;
+  color: #315652;
+  border: 2px solid #315652;
 }
 
-.skills-outer{ 
-  background-color: #ddd;
-  margin-bottom: 0.5rem;
-  height: 10px;
+.my-picture{
+  width: 400px;
+  height: auto;
 }
-
-h4.skills-container{
-  margin-bottom: 5px;
-}
-
-.skills-bar {
-  text-align: left;
-  padding-right: 30px;
-  line-height: 30px;
-  color: white;
-  background-color: #4DB6AC;
-  height: 10px;
-}
-
-.skill-python {
-  width: 85%;
-}
-
-.skill-java {
-  width: 70%;
-}
-
-.skill-js {
-  width: 70%;
-}
-
-.skill-react {
-  width: 60%;
-}
-
-.skill-html {
-  width: 85%;
-}
-
-.skill-css {
-  width: 70%;
-}
-
-.skill-mysql {
-  width: 70%;
-}
-
-.skill-c {
-  width: 60%;
-}
-
-.skill-git {
-  width: 80%;
-}
-
 
 @-webkit-keyframes example {
   from {background-color: red;}
@@ -238,9 +216,9 @@ h4.skills-container{
 
 /* Projects */
 #projects {
-  max-width: 1000px;
   margin: auto;
   font-size: 1.2em;
+  padding: 2em;
 }
 
 h1 {
@@ -322,29 +300,6 @@ h1 {
   font-size: 0.7em;
   border: 2px solid #4DB6AC;
   border-radius: 10px;
-}
-
-/* CONTACT ME */
-#contact {
-  margin: 0 auto;
-  padding: 1.5em;
-}
-#message-section{
-  margin: 0 auto;
-  text-align: center;
-}
-
-#email-button{
-  font-size: 20px;
-  padding: 0.5em;
-  background-color: #E0F2F1;
-  border: none; 
-  border-radius: 10px;
-}
-
-#email-button:hover{
-  font-size: 25px;
-
 }
 
 /* FOOTER*/

@@ -13,10 +13,9 @@
                 <div class="container">
                     <nav id="top-nav">
                         <ul>
-                            <li class="push"><a href="#" class="logo">J</a></li>
+                            <li class="push"><a href="https://juhichaudhari.github.io" class="logo">J</a></li>
                             <li><a href="#about-me">About</a></li>
                             <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -26,7 +25,7 @@
         <section id="landing-page">
             <div class="container-landing">
                 <div class="screen">
-                    <p>public class HelloWorld 
+                    <p>public class HelloWorld <br>
                         { <br>
                             <span class="tab">public static void main(String args[])</span> <br>
                             <span class="tab"></span>{ <br></span>
@@ -43,70 +42,22 @@
         </section>
           
         <section class="container-about">
-            <div id="about-me">
-                <h3>About me</h3>
-                <p>
-                    I am a senior working towards bachelor's degree focused in Computer Science at New Jersey Institute 
-                    of Technology, located at Newark, NJ. Actively looking for opportunities where I can utilize my skills 
-                    and get the real job working experience by learning and doing.</p>
-                <ul class="tags">
-                    <li>fast learner</li>
-                    <li>team player</li>
-                    <li>problem solver</li>
-                    <li>adaptive</li>
-                    <li>communicate effectively</li>
-
-                </ul>
+            <div class="me">
+                <img src="pictures/me.jpeg" alt="My Picture" class="my-picture">
             </div>
-            <div class="container-skills">
-                <h3>My Skills</h3>
-            
-                <p>Python</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-python"></div>
-                </div>
-            
-                <p>Java</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-css"></div>
-                </div>
-            
-                <p>JavaScript</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-js"></div>
-                </div>
-            
-                <p>React</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-react"></div>
-                </div>
-
-                <p>HTML5</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-html"></div>
-                </div>
-
-                <p>CSS3</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-css"></div>
-                </div>
-
-                <p>MySQL</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-mysql"></div>
-                </div>
-
-                <p>C/C++</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-c"></div>
-                </div>
-
-                <p>Git/Github</p>
-                <div class="skills-outer">
-                    <div class="skills-bar skill-git"></div>
-                </div>
-                
-  
+            <div id="about-me">
+                <h2>About me</h2>
+                <p><i class="fas fa-hand-sparkles"></i> Hello, I am Juhi Chaudhari.</p>
+                <p><i class="fas fa-laptop-house"></i> Currently, I am a Software Engineer Intern at 
+                    <a href="https://maps.trimble.com/" target="_blank">Trimble MAPS</a>.</p>
+                <p><i class="fas fa-user-graduate"></i> Soon, I will be graduating with Bachelor's in Computer Science from 
+                    <a href="https://www.njit.edu/" target="_blank">New Jersey Instituiton of Technology </a>(December 2021).
+                </p>
+                <p><i class="fas fa-laptop-code"></i> I have a strong interest in software development, product design, and related fields.</p>
+                <p>My career goal is to work as a Software Engineer with a diverse team. I hope to be a valuable 
+                    addition to an organization with a mission to create a long-lasting positive impact for their customers.
+                </p>
+                <a href="mailto:juhichaudhari@gmail.com" class="btn">Connect With Me</a>
             </div>
         </section>
               
@@ -118,9 +69,8 @@
                 <button class="btn" onclick="filterSelection('python')"> Python</button>
                 <button class="btn" onclick="filterSelection('cpp')"> C++</button>
                 <button class="btn" onclick="filterSelection('java')"> Java</button>
-                <button class="btn" onclick="filterSelection('WebDevelopment')"> React</button>
+                <button class="btn" onclick="filterSelection('react')"> React</button>
                 <button class="btn" onclick="filterSelection('WebDevelopment')"> Web Development</button>
-
             </div>
           
             <!-- Portfolio Gallery Grid -->
@@ -189,6 +139,20 @@
                 </div>
                 <div class="column python">
                     <div class="content skills">
+                        <h4>Big Data Processing</h4>
+                        <p>Created a program that gets a million set of data from Wikipedia Pages. Used Python and Python package,
+                            beautiful soup, to filter out tags and store the data in dictionary.</p>
+                        <ul class="tags">
+                            <li>python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column python">
+                    <div class="content skills">
                         <h4>DNS Programming</h4>
                         <p> Using UDP sockets, designed a simplified version of a DNS client and server. 
                             The client sends a request to the server to look up the IP address of a 
@@ -221,11 +185,12 @@
                 </div>
                 <div class="column cpp">
                     <div class="content skills">
-                        <h4>Lexical and Syntax Analyzer</h4>
-                        <p> A program that interpret a small language with constants, a small number of 
-                            keywords, and some operators and specific grammar rules.Created a Lexical 
-                            Analyzer that would recognize tokens.Constructed an interpreter that would 
-                            evaluate each statement and expression to execute them.</p>
+                        <h4>Complier</h4>
+                        <p> Designed program that interpret a small language with constants, a small number of keywords, 
+                            some operators, and specific grammar rules. Created a Lexical Analyzer that would recognize tokens, 
+                            implemented a parser to match sequences of tokens provided by the lexical analyzer to syntactic rules 
+                            of the language, and constructed an interpreter that would evaluate each statement and expression 
+                            to execute them.</p>
                         <ul class="tags">
                             <li>C++</li>
                         </ul>
@@ -234,9 +199,8 @@
                 <div class="column java">
                     <div class="content skills">
                         <h4>Savings Account</h4>
-                        <p>Created a SavingsAccount object with a balance, interest rate, and a monthly 
-                            service charge. The program is able to make deposits, withdraws, and process 
-                            monthly service fees as user like.</p>
+                        <p>Developed a program that reprents as an savings account. The program is able to make 
+                            deposits, withdraws, and process monthly service fees as user like.</p>
                         <ul class="tags">
                             <li>Java</li>
                             <li>Objected Oriented Programming</li>
@@ -265,22 +229,15 @@
             </div>
                 
         </section>
-              
-        <section>
-            <div class="container-message" id="contact">
-                <h3 class="">Get In Touch With Me</h3>
-                <div id="message-section">
-                    <button id="email-button"><a href="mailto:jc2944@njit.edu?Subject=Hello%20again" target="_top">Message Me</a></button>
-                </div> 
-            </div>
-        </section>
-            
+        
         <footer>
             <div id="bottom-links">
                 <ul>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.njit.edu/" target="_blank"><i class="fas fa-university"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/juhichaudhari88/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/juhichaudhari" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:juhichaudhari@gmail.com?Subject=Hello%20again" target="_blank"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="https://codepen.io/_juhi" target="_blank"><i class="fab fa-codepen"></i></a></li>
+
                 </ul>
                 <p>&copy; Copyright 2021 Juhi Chaudhari</p>  
             </div>
