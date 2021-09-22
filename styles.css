@@ -440,6 +440,10 @@ footer p{
     align-items: center;
   }
 
+  .computer{
+    padding-top: 60px;
+  }
+
 .screen{
   width: 380px;
   height: 200px;
