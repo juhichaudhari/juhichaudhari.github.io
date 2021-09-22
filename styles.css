@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Source+Code+Pro:200,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 
 *{
   margin: 0;
@@ -7,6 +8,8 @@
   box-sizing: border-box;
   overflow: none;
 }
+
+html, body {width: auto!important; overflow-x: hidden!important} 
 
 p{
   margin-bottom: 5px;;
@@ -20,7 +23,7 @@ p{
   align-items: center;
   justify-content: space-evenly;
   font-family: 'Pacifico', cursive;
-  color: #E0F2F1;
+  color: #f1fffe;
   background-color: #4DB6AC;
 }
 
@@ -28,12 +31,14 @@ p{
   background-color: #E0F2F1;
   color: #009688;
   height: 180px;
+  width: 100%;
 }
 
 #landing-page{
   background-color: #E0F2F1;
-  color: #009688;
-  height: 400px;
+  color: #4DB6AC;
+  height: 80%;
+  width: 100%;
 }
 
 .container{
@@ -51,12 +56,12 @@ p{
 
 .push{
   margin-right: auto;
+  
 }
 
-li{
+#top-nav li{
   padding: 1.5em;
   font-family: 'Source Code Pro', monospace;
-  font-size: 1em;
 }
 
 a{
@@ -64,16 +69,21 @@ a{
   color: #009688;
 }
 
+a:hover{
+  color: #315652;
+
+}
+
 /* COMPUTER IMG*/
-.container-landing{
-  width: 380px;
+.comuter{
+  width: 100%;
   margin: 0 auto;
 }
 
 .screen{
   margin: 0 auto;
-  width: 300px;
-  height: 150px;
+  width: 330px;
+  height: 190px;
   background-color: #607D8B;
   border-radius: 25px 25px 0 0;
   color: #fff;
@@ -90,7 +100,7 @@ a{
 
 .key{
   margin: 0 auto;
-  width: 300px;
+  width: 330px;
   height:60px;
   background-color: #E0E0E0;
   border-radius: 0px 0px 20px 20px;
@@ -122,49 +132,43 @@ a{
   height: 10px;
 }
 
-/* About me*/
-h2, h3, h4{
-  color: #4DB6AC;
+h2{
+  color: #315652;
   font-family: 'Source Code Pro', monospace;
   text-align: center;
   margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 2em;
 }
 
+/* About me*/
 #center{
     text-align: center;
 }
 
-/* Skills */
 .container-about{
-  padding: 5em 2em;
+  padding-top: 2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: 2px;
-  overflow: none;
+}
+
+.my-picture{
+  width: 300px;
+  height: auto;
 }
 
 #about-me{
-  width: 40%;
-  margin-left: 3em;
+  margin: 2em;
 }
 
 #about-me h2{
   text-align: left;
-  border-bottom: 1px solid #000;
   width:100%;
-  margin-bottom: 1em;
-}
-
-#about-me a:hover{
-  color: #315652;
-
-}
-
-.me {
-  width: 30%;
+  margin-bottom: 2em;
 }
 
 /* Style the button*/
@@ -174,6 +178,7 @@ h2, h3, h4{
   padding: 12px 20px;
   background-color: #009688;
   color: #f8f8f8;
+  font-size: 16px;
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box;
@@ -187,9 +192,53 @@ h2, h3, h4{
   border: 2px solid #315652;
 }
 
-.my-picture{
-  width: 400px;
-  height: auto;
+#skills{
+  height: 225px;
+  background-color: #315652;
+  color: #eee;
+  margin: 4em 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+h1 {
+  font-weight: 200;
+  margin: 0.4rem;
+  font-size: 2.5rem;
+
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .skills-container {
+    padding: 0 1rem;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 1.3rem;
+  }
 }
 
 @-webkit-keyframes example {
@@ -217,13 +266,28 @@ h2, h3, h4{
 /* Projects */
 #projects {
   margin: auto;
-  font-size: 1.2em;
   padding: 2em;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
+.projects-header{
+  color: #315652;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.projects-pic{
+  width: 80px;
+  height: auto;
 }
 
 .row {
@@ -240,8 +304,12 @@ h1 {
 }
 
 .column {
-  width: 30em;
+  width: 450px;
   display: none; /* Hide all elements by default */
+}
+
+.column:hover{
+  transform: scale(1.1);
 }
 
 /* Content */
@@ -257,31 +325,51 @@ h1 {
 }
 
 #myBtnContainer{
-  margin-left: 2em;
+  margin: 1em 2em;
 }
 
 /* Style the buttons */
-.btn {
+#projects .btn {
   border: none;
   outline: none;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
-  font-size: 0.7em;
+  font-size: 16px;
 
 }
 
-.btn:hover {
+#projects .btn:hover {
   background-color: #E0F2F1;
 }
 
-.btn.active {
+#projects .btn.active {
   background-color: #4DB6AC;
   color: white;
 }
 
-/* Skills */
+h3, h4{
+  color: #4DB6AC;
+  font-family: 'Source Code Pro', monospace;
+  margin-bottom: 30px;
+}
 
+.project-title{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #4DB6AC;
+  font-family: 'Source Code Pro', monospace;
+  margin-bottom: 30px;
+}
+
+.project-title li{
+  margin-left: 1em;
+}
+
+/* Skills */
 .tags
 {
   list-style: none;
@@ -316,32 +404,12 @@ footer{
   align-items: center;
 }
 
+#bottom-links li{
+  padding: 1.5em;
+}
+
 footer p{
   text-align: center;
-}
-
-/* TYPEWRITTER */
-.typewriter{
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #4DB6AC; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #4DB6AC }
 }
 
 /* MEDIA QUARIED*/
@@ -362,10 +430,6 @@ footer p{
     padding: 3em;
   }
 
-  .column {
-    width: 20em;
-  }
-
 }
 
   /* For desktop: */
@@ -376,19 +440,6 @@ footer p{
     align-items: center;
   }
 
-  /* EDUCATION */
-
-
-  .container-about{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-  }
-  .container-cover{
-  width: 380px;
-  margin: 0 auto;
-  }
-
 .screen{
   width: 380px;
   height: 200px;
@@ -396,6 +447,20 @@ footer p{
 
 .key{
   width: 380px;
+  }
+
+  .container-about{
+    padding-top: 5em;
+  }
+
+  .my-picture{
+    width: 400px;
+    height: auto;
+  }
+
+  #about-me{
+    width: 40%;
+    margin-left: 3em;
   }
 
 }

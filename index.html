@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/e64389b91a.js"></script>
         <link rel="stylesheet" href="styles.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
     <body>
         <section id="top">
@@ -14,7 +18,7 @@
                     <nav id="top-nav">
                         <ul>
                             <li class="push"><a href="https://juhichaudhari.github.io" class="logo">J</a></li>
-                            <li><a href="#about-me">About</a></li>
+                            <li><a href="#about-section">About</a></li>
                             <li><a href="#projects">Projects</a></li>
                         </ul>
                     </nav>
@@ -23,7 +27,7 @@
         </section>
         
         <section id="landing-page">
-            <div class="container-landing">
+            <div class="computer">
                 <div class="screen">
                     <p>public class HelloWorld <br>
                         { <br>
@@ -41,29 +45,37 @@
             </div>
         </section>
           
-        <section class="container-about">
-            <div class="me">
-                <img src="pictures/me.jpeg" alt="My Picture" class="my-picture">
+        <section class="container-about" id="about-section">
+            <div id="my-picture">
+                <img src="pictures/IMG_8210.PNG" alt="My Picture" class="my-picture">
             </div>
             <div id="about-me">
                 <h2>About me</h2>
-                <p><i class="fas fa-hand-sparkles"></i> Hello, I am Juhi Chaudhari.</p>
+                <p ><i class="fas fa-hand-sparkles"></i> Hello, I am Juhi Chaudhari.</p>
+                <p><i class="fas fa-user-graduate"></i> I will be graduating with Bachelor's in Computer Science from 
+                    <a href="https://www.njit.edu/" target="_blank">New Jersey Instituiton of Technology </a>in December 2021.
+                </p>
                 <p><i class="fas fa-laptop-house"></i> Currently, I am a Software Engineer Intern at 
                     <a href="https://maps.trimble.com/" target="_blank">Trimble MAPS</a>.</p>
-                <p><i class="fas fa-user-graduate"></i> Soon, I will be graduating with Bachelor's in Computer Science from 
-                    <a href="https://www.njit.edu/" target="_blank">New Jersey Instituiton of Technology </a>(December 2021).
-                </p>
-                <p><i class="fas fa-laptop-code"></i> I have a strong interest in software development, product design, and related fields.</p>
-                <p>My career goal is to work as a Software Engineer with a diverse team. I hope to be a valuable 
-                    addition to an organization with a mission to create a long-lasting positive impact for their customers.
+                <p><i class="fas fa-laptop-code"></i> My career goal is to work as a Software Engineer with a diverse team. 
+                    I hope to be a valuable addition to an organization with a mission to create a long-lasting positive impact 
+                    for their customers.
                 </p>
                 <a href="mailto:juhichaudhari@gmail.com" class="btn">Connect With Me</a>
             </div>
         </section>
+
+        <section id="skills">
+            <div class="skills-container">
+                <h1>My skills include:  
+                <span class="txt-type" data-wait="3000" data-words='["Java", "Python", "HTML/CSS", "Bootstrap", "JavaScript", "React", "SQL/MySQL", "C#"]'></span>
+                </h1>
+            </div>
+        </section>
               
         <section id="projects">
-            <h2>Selected Projects</h2>
-          
+            <p class="projects-header">Projects <span><img src="pictures/IMG_8212.jpeg" alt="My Picture" class="projects-pic"></span>
+            </p>          
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn" onclick="filterSelection('python')"> Python</button>
@@ -77,73 +89,88 @@
             <div class="row">
                 <div class="column python react WebDevelopment">
                     <div class="content skills">
-                        <h4>Tic Tac Toe Game</h4>
-                        <p> A live multiplayer Tic Tac Toe game that supports 2 players and up to 10 spectators at once, 
-                            with saved user game history. Build in 4 weeks. Functional Programming in React, Git version 
-                            control with branching, real time networking with Socketio, unit test coverage, persisting data 
-                            in Postgres database, continuous Heroku deployment, industry-standard (Airbnb) linting</p>
+                            <ul class="project-title">
+                                <li class="push">Tic Tac Toe</li>
+                                <li><a href="https://fierce-ridge-96835.herokuapp.com/" target="_blank"><i class="fas fa-laptop"></i></a></li>
+                                <li><a href="https://github.com/juhichaudhari/tic-tac-toe" target="_blank"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> 
+                            Developed a live multiplayer Tic Tac Toe game that supports 2 players and up to 10 spectators at once, 
+                        with saved user game history. </p>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> 
+                            Functional Programming in React, Git version control with branching, real-time networking with Socket.IO, 
+                        unit test coverage, persisting data in Postgres database, continuous Heroku deployment, industry-standard 
+                        (Airbnb) linting</p>
                         <ul class="tags">
                             <li>Python</li>
-                            <li>react</li>
-                            <li>html/css</li>
-                            <li>git/github</li>
-                            <li>socketio</li>
-                            <li>postgres</li>
-                            <li>mysql</li>
-                            <li>industry-standard (Airbnb) linting</li>
-                            <li>continuous Heroku deployment</li>
+                            <li>React</li>
+                            <li>HTML/CSS</li>
+                            <li>Git/Github</li>
+                            <li>Socket.IO</li>
+                            <li>Postgres/MySQL</li>
+                            <li>Industry-Standard (Airbnb) Linting</li>
+                            <li>Continuous Heroku Deployment</li>
                         </ul>
                     </div>
                 </div>
                 <div class="column python react WebDevelopment">
                     <div class="content skills">
-                        <h4>GroupTree</h4>
-                        <p>A web app that helps users to connect with their friends and family and get rewarded 
-                            to stay connected. A user can add contacts and create events. Once events are completed, 
-                            user get points and can see tree grow. Embraced modern development techniques such as Git version 
-                            control with branching, unit testing, industry standard (Airbnb) linting, continuous integration 
-                            with GitHub Actions, agile methodologies, worked with a Facebook advisor, build in 4 weeks 
-                            Built using React for interactive UI, Router for multiple pages, Postgres for data persistence, 
-                            client-server architecture with Flask backend, and google API for user authentication.</p>
+                        <ul class="project-title">
+                            <li class="push">Group Tree</li>
+                            <li><a href="https://group-tree.herokuapp.com/" target="_blank"><i class="fas fa-laptop"></i></a></li>
+                            <li><a href="https://github.com/CS490-Group3/group-tree" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Designed a web app that helps users to connect 
+                            with their friends and family and get rewarded to stay connected in a form of growing tree.</p>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Embraced modern development techniques such as 
+                            Git version control with branching, unit testing, industry standard (Airbnb) linting, continuous 
+                            integration with GitHub Actions, agile methodologies, worked with a Facebook advisor. </p>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Built using React for interactive UI, 
+                            Router for multiple pages, Postgres for data persistence, client-server architecture with Flask backend, 
+                            and google API for user authentication.</p>
                         <ul class="tags">
-                            <li>team work</li>
+                            <li>Team Work</li>
                             <li>Python</li>
-                            <li>flask</li>
-                            <li>react</li>
-                            <li>html/css</li>
-                            <li>git/github</li>
-                            <li>socketio</li>
-                            <li>postgres</li>
-                            <li>mysql</li>
-                            <li>industry-standard (Airbnb) linting</li>
-                            <li>continuous Heroku deployment</li>
-                            <li>google api</li>
+                            <li>Flask</li>
+                            <li>React</li>
+                            <li>HTML/CSS</li>
+                            <li>Git/Github</li>
+                            <li>Socket.IO</li>
+                            <li>Postgres/MySQL</li>
+                            <li>Industry-Standard (Airbnb) Linting</li>
+                            <li>Continuous Heroku Deployment</li>
+                            <li>Google API</li>
                         </ul>
                     </div>
                 </div>
-                <div class="column python">
+                <div class="column python WebDevelopment">
                     <div class="content skills">
-                        <h4>Music Discovery Web App</h4>
-                        <p>Built a music discovery web app using Spotify API data that suggests new music to users, 
-                            allows them follow along with the Genius lyrics. Build in 3 weeks. Embraced modern development 
+                        <ul class="project-title">
+                            <li class="push">Music Discovery Web App</li>
+                            <li><a href="https://nameless-brook-49609.herokuapp.com/" target="_blank"><i class="fas fa-laptop"></i></a></li>
+                            <li><a href="https://github.com/juhichaudhari/music-discovery" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Created a music discovery web app using Spotify API data that suggests 
+                            new music to users, allows them follow along with the Genius lyrics. Build in 3 weeks. </p>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Embraced modern development 
                             techniques such as Git version control, fetching dynamic data with REST APIs, and using a 
                             client-server architecture with Flask backend and HTML/CSS frontend</p>
                         <ul class="tags">
                             <li>Python</li>
-                            <li>flask</li>
-                            <li>html/css</li>
-                            <li>git/github</li>
-                            <li>rest apis</li>
+                            <li>Flask</li>
+                            <li>HTML/CSS</li>
+                            <li>Git/Github</li>
+                            <li>Rest APIs</li>
                         </ul>
                     </div>
                 </div>
                 <div class="column python">
                     <div class="content skills">
-                        <h4>Big Data Processing</h4>
-                        <p>Created a program that gets a million set of data from Wikipedia Pages. Used Python and Python package,
-                            beautiful soup, to filter out tags and store the data in dictionary.</p>
+                        <h3>Big Data Processing</h3>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Created a program that gets a million set of data from Wikipedia Pages. </p>
+                            <p><i class="fa fa-caret-right" aria-hidden="true"></i> Used Python and Python package,beautifulSoup, to extract data from using expressions, and store the data in a dictionary.</p>
                         <ul class="tags">
-                            <li>python</li>
+                            <li>Python</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
@@ -153,12 +180,11 @@
                 </div>
                 <div class="column python">
                     <div class="content skills">
-                        <h4>DNS Programming</h4>
-                        <p> Using UDP sockets, designed a simplified version of a DNS client and server. 
-                            The client sends a request to the server to look up the IP address of a 
-                            specified host in that domain. The server responds with the type A resource 
-                            record associated with the host. The client and server communicate using 
-                            the message format specified.</p>
+                        <h3>DNS Programming</h3>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>  Designed a simplified version of a DNS client and server using UDP sockets. </p> 
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> The client sends a request to the server to look up the IP address of a specified 
+                            host in that domain. The server responds with the type A resource record associated with the host. The client and server communicate 
+                            using the message format specified.</p>
                         <ul class="tags">
                             <li>Python</li>
                             <li>UDP Sockets</li>
@@ -168,8 +194,8 @@
                 </div>
                 <div class="column python">
                     <div class="content skills">
-                        <h4>UDP Ping client and server</h4>
-                        <p>Using UDP sockets, created a client and server program that enables the client 
+                        <h3>UDP Ping client and server</h3>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Created a client and server program that enables the client 
                             to determine the round-trip time (RTT) to the server. To determine the RTT delay, 
                             the client records the time on sending a ping request to the server, and then 
                             records the time on receiving a ping response from the server.</p>
@@ -185,12 +211,14 @@
                 </div>
                 <div class="column cpp">
                     <div class="content skills">
-                        <h4>Complier</h4>
-                        <p> Designed program that interpret a small language with constants, a small number of keywords, 
-                            some operators, and specific grammar rules. Created a Lexical Analyzer that would recognize tokens, 
-                            implemented a parser to match sequences of tokens provided by the lexical analyzer to syntactic rules 
-                            of the language, and constructed an interpreter that would evaluate each statement and expression 
-                            to execute them.</p>
+                        <h3>Complier</h3>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Designed program that interpret a small language with constants, 
+                            a small number of keywords, some operators, and specific grammar rules. </p>
+                            <p><i class="fa fa-caret-right" aria-hidden="true"></i> Created a Lexical Analyzer that would recognize tokens. </p>
+                            <p><i class="fa fa-caret-right" aria-hidden="true"></i> Implemented a parser to match sequences of tokens provided by the 
+                                lexical analyzer to syntactic rules of the language </p>
+                            <p><i class="fa fa-caret-right" aria-hidden="true"></i> Constructed an interpreter that would evaluate each statement and 
+                                expression to execute them.</p>
                         <ul class="tags">
                             <li>C++</li>
                         </ul>
@@ -198,23 +226,27 @@
                 </div>
                 <div class="column java">
                     <div class="content skills">
-                        <h4>Savings Account</h4>
-                        <p>Developed a program that reprents as an savings account. The program is able to make 
-                            deposits, withdraws, and process monthly service fees as user like.</p>
+                        <h3>Savings Account</h3>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Developed a program that reprents as an savings account. 
+                            The program is able to make deposits, withdrawals, and process monthly service fees as user likes.</p>
                         <ul class="tags">
                             <li>Java</li>
                             <li>Objected Oriented Programming</li>
-                            <li>inheritance</li>
-                            <li>abstract classes</li>
-                            <li>interfaces</li>
+                            <li>Inheritance</li>
+                            <li>Abstract Classes</li>
+                            <li>Interfaces</li>
                         </ul>
                     </div>
                 </div>
                 <div class="column WebDevelopment">
                     <div class="content skills">
-                        <h4>Bank Account</h4>
-                        <p>Created a Bank Account object with a balance, deposite, withdraw, list of Transactions,
-                            and list of the accounts. Also created the Authentication Page and Captcha which adds an
+                        <ul class="project-title">
+                            <li class="push">Bank Account</li>
+                            <li><a href="https://web.njit.edu/~jc2294/202/captcha.html" target="_blank"><i class="fas fa-laptop"></i></a></li>
+                        </ul>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Created a Bank Account object with a balance, deposite, withdraw, list of transactions,
+                            and list of the accounts. </p>
+                        <p><i class="fa fa-caret-right" aria-hidden="true"></i> Created the Authentication Page and Captcha which adds an
                             extra layer of sequerity.</p>
                         <ul class="tags">
                             <li>PHP</li>
@@ -233,10 +265,10 @@
         <footer>
             <div id="bottom-links">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/juhichaudhari88/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/juhichaudhari" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="mailto:juhichaudhari@gmail.com?Subject=Hello%20again" target="_blank"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="https://codepen.io/_juhi" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/juhichaudhari88/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                    <li><a href="https://github.com/juhichaudhari" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                    <li><a href="mailto:juhichaudhari@gmail.com?Subject=Hello%20again" target="_blank"><i class="far fa-envelope fa-lg"></i></a></li>
+                    <li><a href="https://codepen.io/_juhi" target="_blank"><i class="fab fa-codepen fa-lg"></i></a></li>
 
                 </ul>
                 <p>&copy; Copyright 2021 Juhi Chaudhari</p>  
